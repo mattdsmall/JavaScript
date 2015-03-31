@@ -1,0 +1,33 @@
+//var = taco;
+//taco equals -1 because taco is a place holder to compare the numbers of array too
+
+//2  a for loop to loop through the indexes of the array 
+//we will call our variable i 
+//it will go up by 1
+//we know to stop counting up when there is no more numbers to count or in other words when the array has ended
+//so we get number of numbers inside the array by doing what?
+//getting the length of the array so we know how many times we are going to have to compare the numbers
+//so that we can get the largest number
+
+
+//3 we would compare 2 numbers at a time, and set the larger of the 2 numbers in a variable
+
+//4 console.log(taco);
+
+function largest(num) {
+
+var taco = -1;
+
+for (i = 0; i < num.length; i++) {
+
+			if (num[i] > taco)
+			{
+				taco = num[i];
+			}
+	
+		}
+
+		console.log(taco);
+
+
+}

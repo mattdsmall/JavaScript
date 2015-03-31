@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<title>getLetterGrade</title>
+<body>
+<script language="javascript" type="text/javascript"> //this is how we set the script to read javascript 
+
+    var grade=(prompt("What is your number grade?")); //prompt, asks a question to the user
+    
+    
+    function landonLikesOranges(grade) { //(grade) the grade is less import then the white space inbetween ( )
+    
+      if (grade > 90) {
+        return ("A"); //return gives the value of the function when called again
+      }
+      else if (grade >= 80 && grade <=89) { //when trying to put it into a range you need to repeat variable after &&
+        return ("B");//whatever is after the parentheses as part of the if statement is returned
+      }
+      else if (grade >= 70 && grade <=79) {
+        return ("C"); 
+      }
+      else if (grade >= 60 && grade <=69) {
+        return ("D");
+      }
+      else {
+        return ("F");//when the braces are put in then it can run
+      }
+      
+      
+    
+    }
+
+    document.write("For a number grade of " + grade + ", your letter grade is " + landonLikesOranges(grade)); // glue function at the end to produce letter
+
+  </script>
+
+
+</body>
+
+</html>

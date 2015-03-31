@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkerboard</title>
+	<style>
+
+		table, td {
+			border: 3px solid maroon;
+		} 
+		td {
+			width:25px;
+			height:25px;
+		}
+	</style>
+
+<head>
+
+<body>
+	<table>
+			<script>
+			var count = 0;
+			var checked = false;
+			var number = 10;
+			for (row = 0; row < number; row++)
+			{
+				if (row % 2 == 0){
+					checked = true;
+				} else {
+					checked = false;
+				}
+				document.write ('<tr>');
+				for (col = 0; col < number; col++)
+				{
+					document.write ('<td' + (checked == true ? " style=\"background-color: maroon;\"" : "") + '></td>');
+					count++;
+
+					if (checked == true){
+						checked = false;
+					} else {
+						checked = true;
+					}
+				}
+				document.write ('</tr>');
+			}
+
+			</script>
+
+	</table>
+</body>
+</html>

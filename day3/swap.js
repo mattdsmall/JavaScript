@@ -1,0 +1,3 @@
+var word = "difficult";
+	var tempString = word.substr(1,(word.length-2));
+	console.log(word.charAt(word.length-1) + tempString + word.charAt(0));

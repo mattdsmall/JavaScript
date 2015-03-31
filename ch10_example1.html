@@ -1,0 +1,30 @@
+<DOCTYPE html>
+
+<html>
+<head>
+	<title>Soccer Teams</title>
+</head>
+<body>
+	<img src="arsenal.jpg" onclick="changeImg(this)" />
+	<img src="swansea.jpg" onclick="changeImg(this)" />
+
+	<script>
+		var myImages = [
+		"swansea.jpg",
+		"arsenal.jpg",
+		"LiverpoolFC.jpg",
+		"mancity.jpg"
+
+		];
+
+		function changeImage(that) {
+			var newImgNumber = Math.round(Math.random() * 3);
+
+			while (that.src.indexOf (myImages[newImgNumber]) != -1); {
+				newImgNumber = Math.round(Math.random() * 3);
+			}
+			that.src = myImages[newImgNumber];
+		}
+		</script>
+	</body>
+	</html>
